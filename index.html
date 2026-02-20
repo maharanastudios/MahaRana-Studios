@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <!-- Primary Meta Tags -->
+  <title>MahaRana Studios — Mobile App Development, Web Applications & IoT Solutions</title>
+  <meta name="description" content="Expert mobile app development (Flutter, React Native), web applications, and intelligent IoT systems for smart devices. Trusted by 30+ startups and enterprises for scalable software solutions." />
+  <meta name="keywords" content="mobile app development, web development, IoT solutions, Flutter development, React Native, smart device programming, embedded systems, software development, automation solutions, hardware integration" />
+  <meta name="author" content="MahaRana Studios" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="language" content="English" />
+  
+  <!-- Canonical URL for SEO -->
+  <link rel="canonical" href="https://maharanastudios.in/" />
+  
+  <!-- Theme & Color Configuration -->
+  <meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="msapplication-TileColor" content="#7C5CFF" />
+  
+  <!-- Open Graph Tags (Social Media Sharing) -->
+  <meta property="og:site_name" content="MahaRana Studios" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MahaRana Studios — Modern Digital & IoT Solutions" />
+  <meta property="og:description" content="Create cutting-edge mobile apps, responsive websites, and intelligent IoT systems. Expert team delivering scalable solutions." />
+  <meta property="og:url" content="https://maharanastudios.in/" />
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MahaRana Studios — Modern Digital & IoT Solutions" />
+  <meta name="twitter:description" content="Expert mobile app, web, and IoT development. Trusted by innovative companies." />
+  <meta name="twitter:site" content="@maharanastudios" />
+  
+  <!-- Favicon & App Icons -->
+  <link rel="manifest" href="manifest.json" />
+  
+  <!-- Resource Hints for PageSpeed Optimization -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+  <link rel="preconnect" href="https://firestore.googleapis.com" />
+  
+  <!-- Google Fonts - Optimized with display=swap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css" media="all" />
+  <meta name="supported-color-schemes" content="light dark" />
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/#",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://maharanastudios.in/#organization",
+        "name": "MahaRana Studios",
+        "alternateName": "Maharana Studios",
+        "description": "MahaRana Studios is a digital innovation studio creating mobile apps, websites, and IoT solutions for forward-thinking companies.",
+        "url": "https://maharanastudios.in/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://maharanastudios.in/images/maharana-logo.png",
+          "width": 250,
+          "height": 250
+        },
+        "sameAs": [
+          "https://instagram.com/maharanastudios"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dharwad",
+          "addressLocality": "Dharwad",
+          "addressRegion": "Karnataka",
+          "postalCode": "580001",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "email": "contact@maharanastudios.in",
+          "availableLanguage": "en"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://maharanastudios.in/#localbusiness",
+        "name": "MahaRana Studios",
+        "description": "Mobile App & Web Development Studio",
+        "url": "https://maharanastudios.in/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dharwad",
+          "addressLocality": "Dharwad",
+          "addressRegion": "Karnataka",
+          "postalCode": "580001",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://maharanastudios.in/#website",
+        "url": "https://maharanastudios.in/",
+        "name": "MahaRana Studios",
+        "description": "Mobile Apps, Web Development & IoT Solutions",
+        "publisher": {
+          "@id": "https://maharanastudios.in/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://maharanastudios.in/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://maharanastudios.in/#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://maharanastudios.in/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Preload critical resources -->
+  <link rel="preload" as="style" href="css/styles.css" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" as="style" />
+</head>
+<body>
+  <!-- Skip to Main Content Link (Accessibility) -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+  
+  <!-- Header Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="MahaRana Studios - Home">
+        <img src="images/maharana-logo.png" alt="MahaRana Studios Logo" class="brand-logo" width="50" height="50" />
+        <span class="brand-text">MahaRana Studios</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Primary navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <span class="visually-hidden">Toggle color theme</span>
+        </button>
+        <button class="btn btn-ghost mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" role="main">
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Turning Ideas into Intelligent Solutions
+            </h1>
+            <p class="hero-subtitle">
+              Transform your vision into reality with cutting-edge mobile apps, responsive websites, and intelligent IoT systems. From concept to deployment, we deliver scalable solutions that drive growth.
+            </p>
+            
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#contact">Start Your Project</a>
+              <a class="btn btn-outline" href="#portfolio">View Our Work</a>
+            </div>
+
+            <ul class="hero-features">
+              <li><span class="checkmark">✓</span> Mobile &amp; Web Apps</li>
+              <li><span class="checkmark">✓</span> IoT &amp; Automation</li>
+              <li><span class="checkmark">✓</span> UI/UX &amp; Branding</li>
+            </ul>
+
+            <div class="trust-signals">
+              <div class="trust-item">
+                <strong>50+</strong>
+                <span>Projects Delivered</span>
+              </div>
+              <div class="trust-item">
+                <strong>30+</strong>
+                <span>Satisfied Clients</span>
+              </div>
+              <div class="trust-item">
+                <strong>5+</strong>
+                <span>Years Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About MahaRana Studios</h2>
+          <p class="lead">Specialized software engineering studio delivering mobile applications, web platforms, IoT systems, and smart device solutions. Expert in embedded systems, cloud architecture, and scalable technology.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <h3>💡 Mission</h3>
+            <p>Empower businesses with cutting-edge mobile, web, and IoT technology solutions that drive innovation and sustainable digital transformation.</p>
+          </article>
+          <article class="about-card">
+            <h3>🚀 Vision</h3>
+            <p>To be the most trusted software and IoT development partner for companies building intelligent systems, scalable applications, and next-generation smart device solutions.</p>
+          </article>
+          <article class="about-card">
+            <h3>⚡ Our Approach</h3>
+            <p>User-focused design, modern development practices, solid engineering principles, rapid iteration, and production-grade quality for every project we deliver.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Services</h2>
+          <p class="lead">Complete software development services: mobile applications, web platforms, IoT systems, and embedded software engineering.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7" y="3" width="10" height="18" rx="2" fill="currentColor" opacity="0.12"/>
+                <rect x="9" y="6" width="6" height="10" rx="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Mobile App Development</h3>
+            <p>Native iOS and Android applications. Cross-platform solutions using Flutter and React Native. High-performance apps with offline support and enterprise-grade security.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="5" width="18" height="12" rx="2" fill="currentColor" opacity="0.12"/>
+                <rect x="7" y="11" width="10" height="1.6" rx="0.8" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Web App &amp; Website Development</h3>
+            <p>Full-stack web development with React, Vue, and Node.js. SEO-optimized, high-performance web applications with 90+ PageSpeed scores and scalable backends.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="6" width="12" height="12" rx="2" fill="currentColor" opacity="0.12"/>
+                <path d="M9 9h6v6H9z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>IoT &amp; Smart Device Systems</h3>
+            <p>End-to-end IoT solutions: ESP32/ESP8266 firmware, hardware integration, real-time sensor systems, MQTT protocols, cloud connectivity, and intelligent automation.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="8" r="3" fill="currentColor" opacity="0.12"/>
+                <path d="M6 18c2-3 10-3 12 0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>UI/UX Design &amp; Branding</h3>
+            <p>User-centric product design for mobile and web applications. Design systems, intuitive interfaces, and strategic branding that drives engagement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio/Projects Section -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p class="lead">A showcase of our recent work across mobile, web, and IoT domains.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="images/hello-pdf.png" alt="Hello PDF mobile app interface for PDF toolkit" width="400" height="250" loading="lazy" />
+              <span class="portfolio-tag">Mobile App</span>
+            </div>
+            <div class="portfolio-content">
+              <h3>Hello PDF</h3>
+              <p>All‑in‑One PDF Toolkit – Create, scan, edit, convert, read and organize PDFs in one modern, fast, and privacy‑friendly app.</p>
+              <ul class="tech-stack">
+                <li class="pill">Android</li>
+                <li class="pill">Native Development</li>
+              </ul>
+              <a href="https://play.google.com/store/apps/details?id=com.srk.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download on Play Store</a>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="images/pro-coding-studio.png" alt="Pro Coding Studio developer toolkit mobile app" width="400" height="250" loading="lazy" />
+              <span class="portfolio-tag">Mobile App</span>
+            </div>
+            <div class="portfolio-content">
+              <h3>Pro Coding Studio</h3>
+              <p>The Complete Developer Toolkit on Mobile – A comprehensive IDE and code editor for developers on the go.</p>
+              <ul class="tech-stack">
+                <li class="pill">Android</li>
+                <li class="pill">Code Editor</li>
+              </ul>
+              <a href="https://play.google.com/store/apps/details?id=com.pmk.pro_coding_studio" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download on Play Store</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-cta">
+          <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <h2>Client Testimonials</h2>
+          <p class="lead">Real feedback from founders and product leaders we've worked with.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="rating" aria-label="5 out of 5 stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <blockquote>
+              <p>"MahaRana Studios delivered our mobile app on time and within budget. Their team's attention to detail and communication throughout the project was outstanding."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <strong>Priya Sharma</strong>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="rating" aria-label="5 out of 5 stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <blockquote>
+              <p>"The IoT solution they built for us has transformed our operations. Real-time monitoring and automation have increased efficiency by 40%."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <strong>Rajesh Kumar</strong>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="rating" aria-label="5 out of 5 stars">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <blockquote>
+              <p>"Their web development expertise is second to none. The platform they built handles our load with ease and provides an excellent user experience."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <strong>Aisha Patel</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies section" id="case-studies">
+      <div class="container">
+        <div class="section-head">
+          <h2>Case Studies</h2>
+          <p class="lead">How we helped businesses achieve their goals with technology.</p>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-header">
+              <h3>50% Faster Order Processing</h3>
+              <span class="case-tag">E-Commerce</span>
+            </div>
+            <p>We developed a custom order management system that reduced processing time significantly and improved customer satisfaction.</p>
+            <ul class="case-metrics">
+              <li><strong>50%</strong> faster processing</li>
+              <li><strong>35%</strong> cost reduction</li>
+              <li><strong>99.9%</strong> uptime</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <div class="case-header">
+              <h3>Real-Time Asset Tracking</h3>
+              <span class="case-tag">IoT Solution</span>
+            </div>
+            <p>Built an IoT tracking system that provides real-time visibility of assets across multiple warehouses.</p>
+            <ul class="case-metrics">
+              <li><strong>500+</strong> devices connected</li>
+              <li><strong>24/7</strong> monitoring</li>
+              <li><strong>100%</strong> accuracy</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <div class="case-header">
+              <h3>3x User Growth in 6 Months</h3>
+              <span class="case-tag">Mobile App</span>
+            </div>
+            <p>Redesigned the app's UX and infrastructure, resulting in significant user acquisition and retention improvements.</p>
+            <ul class="case-metrics">
+              <li><strong>3x</strong> user growth</li>
+              <li><strong>4.8★</strong> app rating</li>
+              <li><strong>2.5x</strong> engagement</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us section" id="why-us">
+      <div class="container">
+        <div class="section-head">
+          <h2>Why Choose Us</h2>
+          <p class="lead">We're committed to delivering exceptional value and results.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>High-Quality Work</h3>
+            <p>Clean code, best practices, and rigorous testing ensure production-ready solutions.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Agile development methodology ensures quick iterations and on-time project completion.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="currentColor"/>
+                <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>End-to-End Support</h3>
+            <p>From planning and development to deployment and maintenance, we're with you every step.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2l1.41 1.41L16.2 1.8a6.004 6.004 0 0 1 6 6v.5l1.5 1.5V8a8 8 0 0 0-8-8l-.48 1.48L12 2zm6 14.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm-12-5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm6 6l1.41 1.41L10.2 22.2a6.004 6.004 0 0 1-6-6v-.5L2.7 14.2v.5a8 8 0 0 0 8 8l.48-1.48L12 22z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Scalable Solutions</h3>
+            <p>Built for growth, our solutions scale seamlessly as your business expands.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor" opacity="0.6"/>
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Industry Expertise</h3>
+            <p>Years of experience across industries, delivering solutions in fintech, e-commerce, IoT, and more.</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm-2 16l-4-4 1.4-1.4L10 14.2l6.6-6.6L18 9l-8 8z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Transparent Process</h3>
+            <p>Regular updates, clear communication, and honest timelines from start to finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Frequently Asked Questions</h2>
+          <p class="lead">Quick answers to common questions about our services and process.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How long does a typical project take?</summary>
+            <div class="faq-body">
+              <p>Project timelines vary based on scope and complexity. A mobile app typically takes 3-6 months, websites 4-12 weeks, and IoT solutions 2-4 months. We'll provide a detailed timeline during the discovery phase.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What's your development process?</summary>
+            <div class="faq-body">
+              <p>We follow agile methodology: Discovery → Planning → Design → Development → Testing → Deployment → Support. Regular communication and weekly updates keep you informed every step of the way.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you provide post-launch support?</summary>
+            <div class="faq-body">
+              <p>Yes, absolutely. We offer maintenance packages including bug fixes, updates, performance optimization, and feature enhancements. Support can be on-demand or through fixed retainers.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>What technologies do you work with?</summary>
+            <div class="faq-body">
+              <p>We're technology-agnostic and choose the best tools for each project. Common selections: React, Next.js, Angular for web; Flutter, React Native, Swift for mobile; Node.js, Python for backends; and ESP-IDF for IoT.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>How much does a project cost?</summary>
+            <div class="faq-body">
+              <p>Costs depend on project scope, complexity, and timeline. We offer flexible engagement models: fixed-price, time &amp; material, and retainer-based. Get a free consultation and detailed quote.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can you integrate with existing systems?</summary>
+            <div class="faq-body">
+              <p>Yes, we specialize in integrations with existing platforms, APIs, and databases. Whether it's payment gateways, CRMs, or legacy systems, we handle complex integrations smoothly.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Get In Touch</h2>
+          <p class="lead">Ready to bring your idea to life? Let's talk about your project.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-details">
+              <div class="detail-item">
+                <strong>📧 Email</strong>
+                <p>
+                  <a href="mailto:contact@maharanastudios.in" class="contact-link">contact@maharanastudios.in</a>
+                </p>
+              </div>
+              <div class="detail-item">
+                <strong>📍 Location</strong>
+                <p>Dharwad, Karnataka, India</p>
+              </div>
+              <div class="detail-item">
+                <strong>⏱️ Response Time</strong>
+                <p>Within 1 business day</p>
+              </div>
+              <div class="detail-item">
+                <strong>🌍 Follow Us</strong>
+                <div class="social-links">
+                  <a href="https://instagram.com/maharanastudios" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" method="POST" action="#" novalidate>
+            <h3>Send Message</h3>
+            
+            <label>
+              <span>Full Name</span>
+              <input 
+                type="text" 
+                name="name" 
+                required 
+                aria-required="true"
+                placeholder="Your name" />
+            </label>
+
+            <label>
+              <span>Email Address</span>
+              <input 
+                type="email" 
+                name="email" 
+                required 
+                aria-required="true"
+                placeholder="your@email.com" />
+            </label>
+
+            <label>
+              <span>Project Details</span>
+              <textarea 
+                name="message" 
+                rows="5" 
+                required 
+                aria-required="true"
+                placeholder="Tell us about your project..."></textarea>
+            </label>
+
+            <!-- Honeypot field for spam protection -->
+            <input type="text" name="company" class="hp-field" tabindex="-1" autocomplete="off" />
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <button class="btn btn-outline" type="reset">Clear</button>
+            </div>
+
+            <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="final-cta section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Ideas Into Reality?</h2>
+          <p>Let's work together to build something amazing.</p>
+          <a href="#contact" class="btn btn-primary btn-lg">Schedule Your Free Consultation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>MahaRana Studios</strong>
+          <p>Creating digital solutions that matter.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="https://instagram.com/maharanastudios" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+        </nav>
+
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2025 MahaRana Studios. All rights reserved.</p>
+          <p class="location">Based in Dharwad, India 🇮🇳</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js" defer></script>
+  <!-- Firebase contact integration -->
+  <script type="module" src="./contact.js" defer></script>
+</body>
+</html>
